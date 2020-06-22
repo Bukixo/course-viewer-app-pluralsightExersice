@@ -1,0 +1,24 @@
+{
+  "name": "course-viewer-app-pluralsightexersice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bukixo/course-viewer-app-pluralsightExersice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bukixo/course-viewer-app-pluralsightExersice/issues"
+  },
+  "homepage": "https://github.com/Bukixo/course-viewer-app-pluralsightExersice#readme",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.26",
+    "angular": "^1.8.0",
+    "bootstrap": "^4.5.0"
+  }
+}
