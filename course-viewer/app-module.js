@@ -1,7 +1,7 @@
 (function () {
     'use strict'
 
-    angular.module("App", ['main']);
+    angular.module("courseViewer", []);
 
     var myApp = angular.module("main", []);
 

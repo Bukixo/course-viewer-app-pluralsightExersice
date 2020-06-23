@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='App'>
+<html ng-app='courseViewer'>
 
 <head>
     <meta charset="utf-8">
@@ -8,10 +8,8 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
-<body ng-controller="mainController as vm">
-    <h1>Courser viewer</h1>
-
-    {{ 1 + 1}}
+<body ng-cloak>
+    <course-viewer-app></course-viewer-app>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -24,6 +22,7 @@
     crossorigin="anonymous"></script>
 <script type="text/javascript" src="./node_modules/angular/angular.js"></script>
 <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
-<script src="app.js"></script>
+<script src="course-viewer/app-module.js"></script>
+<script src="course-viewer/course-viewer-app.component.js"></script>
 
 </html>
