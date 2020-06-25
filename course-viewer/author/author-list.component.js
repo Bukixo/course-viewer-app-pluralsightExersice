@@ -1,7 +1,14 @@
-( function() {
+(function () {
     'use strict';
 
     angular.module('courseViewer').component('authorList', {
-        templateUrl: 'course-viewer/author/author.component.html'
-    })
+        bindings: {
+        },
+        controllerAs: 'vm',
+        controller: function () {
+            var vm = this;
+
+        },
+        templateUrl: 'course-viewer/author/author-list.component.html'
+    });
 })();
