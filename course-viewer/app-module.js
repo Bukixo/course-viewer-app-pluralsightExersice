@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var appModule = angular.module('courseViewer', []);
+    var appModule = angular.module('courseViewer', ['ui.router']);
 
     appModule.value('componentBorders', true);
 
@@ -26,5 +26,33 @@
             }
         }
     });
+
+    appModule.config(function ($stateProvider) {
+        var states = [
+            {
+                name: 'home',
+                url: '',
+                template: '<home></home>',
+            },
+            {
+                name: 'home2',
+                url: '/',
+                template: '<home></home>'
+            },
+            {
+                name: 'authors',
+                url: 'authors/',
+                template: '<author-list></author-list>'
+            },
+            {
+                name: 'courses',
+                url: '/courses',
+                template: '<course-list></course-list>'
+            }
+        ];
+        states.forEach(function (state) {
+            $stateProvider.state(state);
+        })
+    })
 
 })();
