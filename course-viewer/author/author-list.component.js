@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('courseViewer').component('', {
+    angular.module('courseViewer').component('authorList', {
         bindings: {
         },
         controllerAs: 'vm',
