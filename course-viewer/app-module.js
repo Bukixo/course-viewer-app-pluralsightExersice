@@ -3,7 +3,7 @@
 
     var appModule = angular.module('courseViewer', ['ui.router']);
 
-    appModule.value('componentBorders', true);
+    appModule.value('componentBorders', false);
 
     appModule.run(function (componentBorders) {
         if (componentBorders) {
@@ -45,8 +45,18 @@
                 template: '<author-list></author-list>'
             },
             {
+                name: 'course',
+                url: '/course/{courseId}',
+                resolve: {
+                    courseId: function ($stateParams) {
+                        return $stateParams.courseId;
+                    }
+                },
+                template: '<course course-id="$resolve.courseId"></course>'
+            },
+            {
                 name: 'courses',
-                url: '/courses',
+                url: 'courses/',
                 template: '<course-list></course-list>'
             }
         ];
