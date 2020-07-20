@@ -3,7 +3,7 @@
 
     var appModule = angular.module('courseViewer', ['ui.router']);
 
-    appModule.value('componentBorders', false);
+    appModule.value('componentBorders', true);
 
     appModule.run(function (componentBorders) {
         if (componentBorders) {

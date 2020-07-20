@@ -6,7 +6,7 @@
             courseId: '<'
         },
         controllerAs: 'vm',
-        controller: function (){
+        controller: function () {
             var vm = this;
 
             vm.$onInit = function () {
