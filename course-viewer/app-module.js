@@ -55,6 +55,24 @@
                 template: '<course course-id="$resolve.courseId"></course>'
             },
             {
+                name: 'course.modules',
+                url: '/modules',
+                template: '<course-modules course="vm.course"></course.modules>'
+
+            },
+            {
+                name: 'course.discussion',
+                url: '/discussion',
+                template: '<course-discussion course="vm.course"></course.discussion>'
+
+            },
+            {
+                name: 'course.description',
+                url: '/description',
+                template: '<course-description course="vm.course"></course.description>'
+
+            },
+            {
                 name: 'courses',
                 url: 'courses/',
                 template: '<course-list></course-list>'
