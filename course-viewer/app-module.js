@@ -27,7 +27,7 @@
         }
     });
 
-    appModule.config(function ($stateProvider) {
+    appModule.config(function ($stateProvider, $urlRouterProvider) {
         var states = [
             {
                 name: 'home',
@@ -78,6 +78,10 @@
                 template: '<course-list></course-list>'
             }
         ];
+
+        $urlRouterProvider.when('/course/:courseId', '/course/:courseId/modules');
+        // $urlRouterProvider.otherwise('/');
+
         states.forEach(function (state) {
             $stateProvider.state(state);
         })
