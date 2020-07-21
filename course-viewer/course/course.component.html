@@ -2,12 +2,13 @@
     <div class="row">
         <div class="col-md-10">
             <span> Course: {{ vm.courseId }}</span>
-            <course-heading></course-heading>
+            <course-heading course="vm.course"></course-heading>
             <hr />
             <course-navigator></course-navigator>
             <br />
             <!-- component placeholder -->
             <!-- temporary - swap with course-modules, course-description, course-discussion -->
+            <hr>
             <course-modules></course-modules>
         </div>
         <div class="col-md-2">

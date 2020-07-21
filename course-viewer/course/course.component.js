@@ -10,7 +10,9 @@
             var vm = this;
 
             vm.$onInit = function () {
-                vm.courseId = 200;
+                vm.course = {
+                    CourseId: vm.courseId
+                };
             }
         },
         templateUrl: 'course-viewer/course/course.component.html'
