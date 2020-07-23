@@ -3,14 +3,15 @@
 
     angular.module('courseViewer').component('courseList', {
         controllerAs: 'vm',
-        controller: function (apiBase, $http) {
+        controller: function (courseService) {
             var vm = this;
 
             vm.courses = null;
 
             vm.$onInit = function () {
-                $http.get(apiBase + 'courses').then(function (result){
-                    vm.courses = result.data
+               courseService.getAllCourses()
+                .then(function (courses) {
+                    vm.courses = courses;
                 })
             }
         },
